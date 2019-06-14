@@ -93,4 +93,15 @@ public class CityRestController {
     public List<City> findByDescriptionLike(@RequestParam(value = "description") String description) {
         return cityService.findByDescriptionLike(description);
     }
+
+    /**
+     * 高级搜索
+     *
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "/api/city/customerQuery", method = RequestMethod.GET)
+    public List<City> findByDescriptionLike() {
+        return cityService.searchCity(0,10,"henhao");
+    }
 }

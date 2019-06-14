@@ -60,4 +60,6 @@ public interface CityService {
      * @return
      */
     List<City> findByDescriptionLike(String description);
+
+    List<City> searchCity(Integer pageNumber, Integer pageSize, String searchContent);
 }
