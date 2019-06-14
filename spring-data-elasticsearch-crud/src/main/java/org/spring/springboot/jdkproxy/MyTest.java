@@ -5,6 +5,8 @@ import org.spring.springboot.cglibproxy.CglibProxyFactory;
 import org.spring.springboot.cglibproxy.CustomerImpl;
 import org.springframework.cglib.core.DebuggingClassWriter;
 
+import java.util.ArrayList;
+
 /**
  * @desc: -.
  * @Author: lipei
@@ -30,6 +32,13 @@ public class MyTest {
         CustomerImpl proxyObj = (CustomerImpl) cglibProxyFactory.getProxyFactory();
         proxyObj.query();
 
+    }
+
+    @Test
+    public void  deBug() {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("sz");
+        list.get(0).equals("d");
     }
 
 
