@@ -7,3 +7,5 @@
    
    CityRepository 是通过jdk动态代理 在执行方法时使用代理的方法 由spring 的ElasticsearchTemplate core包下之下 实现
     
+ ##20
+ 增加 aop的实现demo和其生成类查看 
